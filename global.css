@@ -1,0 +1,23 @@
+:root{
+    --bg-color: #191919
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: clamp(100vw, 100vw, 100vw);
+    height: clamp(100vh, 100vh, 100vh);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.center{
+    width: 60vmax;
+    height: 40vmax;
+}
