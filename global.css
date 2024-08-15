@@ -108,12 +108,12 @@ div.colors>div{
     height: 3vmax;
     width: 2vmax;
     background-color: green;
-    transition: all 1s;
-    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    transition-timing-function: ease-out;
 }
 
 div.colors>div:hover{
-    transform: translateY(-1.5vmax) scale(1.1)
+    transform: translateY(-1.5vmax);
 }
 
 div.color:nth-child(1){
