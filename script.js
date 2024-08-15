@@ -31,13 +31,20 @@ const colorList = {
     },
 }
 
-
-colors.forEach(color => {
-    color.addEventListener("click", (e) => {
-        const className = e.target.classList[1]
-        const colorName = colorList[className]
-        Object.entries(colorName).forEach(([key, value]) => {
-            document.documentElement.style.setProperty(key, value);
+function setColors() {
+    colors.forEach(color => {
+        color.addEventListener("click", (e) => {
+            const className = e.target.classList[1]
+            const colorName = colorList[className]
+            Object.entries(colorName).forEach(([key, value]) => {
+                document.documentElement.style.setProperty(key, value);
+            })
         })
     })
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    setColors();
 })
+
