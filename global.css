@@ -111,15 +111,15 @@ div.colors{
 }
 
 div.colors>div{
-    height: 3vmax;
+    height: 2.5vmax;
     width: 2vmax;
     background-color: green;
-    transition: all 0.5s;
+    transition: all 0.3s;
     transition-timing-function: ease-out;
 }
 
 div.colors>div:hover{
-    transform: translateY(-1.5vmax);
+    transform: translateY(-1vmax);
 }
 
 div.color:nth-child(1){
